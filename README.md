@@ -22,5 +22,14 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/98379636/173809118-3ced8e51-adca-4d45-9492-0d1deb0d2270.png)
 
 **develop a program to perform  linear transformation**
+from PIL import Image
+img=Image.open("butterfly.jpg")
+img=img.rotate(180)
+img.show()
+cv2.waitkey(0)
+cv2.destroyAllWindows()
+
+**output**
+
 
 
