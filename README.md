@@ -40,6 +40,8 @@ img2=ImageColor.getrgb("red")
 print(img2)
 
 **output**
+![image](https://user-images.githubusercontent.com/98379636/173816890-df46b402-dba1-4e2c-beb6-e6c2199df74b.png)
+
 
 
 
