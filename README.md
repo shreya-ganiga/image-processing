@@ -44,6 +44,13 @@ print(img2)
 
 **develop program to create image using color**
 
+from PIL import Image
+img=Image.new('RGB',(200,400),(255,255,0))
+img.show()
+
+**output**
+
+
 
 
 
