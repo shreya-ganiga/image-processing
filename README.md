@@ -30,6 +30,11 @@ cv2.waitkey(0)
 cv2.destroyAllWindows()
 
 **output**
+![image](https://user-images.githubusercontent.com/98379636/173812041-90023fe5-c81f-4c11-b209-dbcec7166c9e.png)
+
+**develop a program to convert color string to RGB color values**
+
+
 
 
 
