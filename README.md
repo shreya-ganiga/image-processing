@@ -49,6 +49,8 @@ img=Image.new('RGB',(200,400),(255,255,0))
 img.show()
 
 **output**
+![image](https://user-images.githubusercontent.com/98379636/173818248-46edcf1e-1469-4ed5-9f6d-75ce0e62dcdd.png)
+
 
 
 
