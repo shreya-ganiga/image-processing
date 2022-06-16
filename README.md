@@ -98,6 +98,20 @@ Mode: RGB
 size: (275, 183)
 Width: 275
 Height: 183
+<br>
+
+**resize**
+import cv2
+img=cv2.imread('leaf.jpg')
+print('original image length width',img.shape)
+cv2.imshow('original image',img)
+imgresize=cv2.resize(img,(150,160))
+cv2.imshow('Resized image',imgresize)
+print('Resized  image lenght width',imgresize.shape)
+cv2.waitKey(0)
+<br>
+
+**output**
 
 
 
