@@ -80,6 +80,19 @@ plt.show()
 ![image](https://user-images.githubusercontent.com/98379636/174039208-f7eeaf8d-318e-477a-bfe5-1dee2d8bf280.png)
 <br>
 **develop the image attributes**
+from PIL import Image
+image=Image.open('leaf.jpg')
+print("Filename:",image.filename)
+print("Format:",image.format)
+print("Mode:",image.mode)
+print("size:",image.size)
+print("Width:",image.width)
+print("Height:",image.height)
+image.close()
+<br>
+
+**output**
+
 
 
 
