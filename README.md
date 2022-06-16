@@ -77,6 +77,10 @@ plt.show()
 
 **output**
 ![image](https://user-images.githubusercontent.com/98379636/174038855-7f2f3122-23b2-4d45-8a83-320e2b34c7ce.png)
+![image](https://user-images.githubusercontent.com/98379636/174039208-f7eeaf8d-318e-477a-bfe5-1dee2d8bf280.png)
+<br>
+**develop the image attributes**
+
 
 
 
