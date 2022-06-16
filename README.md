@@ -100,7 +100,7 @@ Width: 275
 Height: 183
 <br>
 
-**resize**
+**resize the image**
 import cv2
 img=cv2.imread('leaf.jpg')
 print('original image length width',img.shape)
@@ -118,7 +118,7 @@ original image length width (183, 275, 3)
 Resized  image lenght width (160, 150, 3)
 <br>
 
-****
+** convert the original image to grayscale and then binary**
 import cv2
 img=cv2.imread('butterfly.jpg')
 cv2.imshow("RGB",img)
