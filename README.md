@@ -92,6 +92,12 @@ image.close()
 <br>
 
 **output**
+Filename: leaf.jpg
+Format: JPEG
+Mode: RGB
+size: (275, 183)
+Width: 275
+Height: 183
 
 
 
