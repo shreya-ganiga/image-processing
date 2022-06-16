@@ -116,6 +116,24 @@ cv2.waitKey(0)
 ![image](https://user-images.githubusercontent.com/98379636/174054040-e3d2d88d-53c5-4660-9e7d-e8824e71d7c5.png)
 original image length width (183, 275, 3)
 Resized  image lenght width (160, 150, 3)
+<br>
+
+****
+import cv2
+img=cv2.imread('butterfly.jpg')
+cv2.imshow("RGB",img)
+cv2.waitKey(0)
+img=cv2.imread('butterfly.jpg',0)
+cv2.imshow("Gray",img)
+cv2.waitKey(0)
+ret,bw_img=cv2.threshold(img,127,255,cv2.THRESH_BINARY)
+cv2.imshow("Binary",bw_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+<br>
+
+**output**
+
 
 
 
