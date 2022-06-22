@@ -137,6 +137,17 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/98379636/174061294-31734fa9-3444-4c1b-bc89-80efed51ac15.png)
 ![image](https://user-images.githubusercontent.com/98379636/174061435-1678c746-8240-400b-bfbb-2a294a4e526c.png)
 
+**url code**
+from skimage import io
+import matplotlib.pyplot as plt
+url='https://www.thesprucepets.com/thmb/FOLwbR72UrUpF9sZ45RYKzgO8dg=/3072x2034/filters:fill(auto,1)/yellow-tang-fish-508304367-5c3d2790c9e77c000117dcf2.jpg'
+image=io.imread(url)
+plt.imshow(image)
+plt.show()
+<br>
+
+**output**
+
 
 
 
