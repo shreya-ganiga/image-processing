@@ -150,7 +150,17 @@ plt.show()
 ![image](https://user-images.githubusercontent.com/98379636/175009258-2e38cf41-f147-4dbb-8f17-9258018f33d7.png)
 <br>
 
-****
+**masking and bluring**
+import cv2
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
+img=cv2.imread('fish2.jpg')
+plt.imshow(img)
+plt.show()
+<br>
+
+**output**
+
 
 
 
