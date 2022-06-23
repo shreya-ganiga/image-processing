@@ -178,6 +178,19 @@ plt.show()
 **output**
 ![image](https://user-images.githubusercontent.com/98379636/175266169-6d459996-5420-4de2-80d2-86d283028503.png)
 
+light_white=(0,0,200)
+dark_white=(145,60,255)
+mask_white=cv2.inRange(hsv_img,light_white,dark_white)
+result_white=cv2.bitwise_and(img,img, mask=mask_white)
+plt.subplot(1,2,1)
+plt.imshow(mask_white,cmap="gray")
+plt.subplot(1,2,2)
+plt.imshow(result_white)
+plt.show()
+<br>
+**output**
+
+
 
 
 
