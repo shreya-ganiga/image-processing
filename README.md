@@ -238,6 +238,20 @@ cv2.imwrite('output.jpg',fimg4)
 ![image](https://user-images.githubusercontent.com/98379636/175274176-f118e509-006f-474f-87cf-cedf27b51698.png)
 ![image](https://user-images.githubusercontent.com/98379636/175274280-285c650c-51f5-4fd8-84f1-d994a3f78761.png)
 
+**2D array**
+import cv2 as c
+import numpy as np
+from PIL import Image
+array =np.zeros([100,200,3],dtype=np.uint8)
+array[:,:100]=[255,130,0]
+array[:,100:]=[0,0,255]
+img=Image.fromarray(array)
+img.save('img1.jpg')
+img.show()
+c.waitKey(0)
+
+**output**
+
 
 
 
