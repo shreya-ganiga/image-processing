@@ -254,6 +254,24 @@ c.waitKey(0)
 ![image](https://user-images.githubusercontent.com/98379636/175282663-d4283469-a74a-4387-b5ea-6d3f72eb18b9.png)
 
 **change image to different color spaces**
+import cv2
+img=cv2.imread("plants.jpg")
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)
+cv2.imshow("GRAY image",gray)
+cv2.imshow("HSV image",hsv)
+cv2.imshow("LAB image",lab)
+cv2.imshow("HLS image",hls)
+cv2.imshow("YUV image",yuv)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+**output**
+![image](https://user-images.githubusercontent.com/98379636/175287156-63845181-57fd-4aff-90db-a14ecd54953f.png)
+
 
 
 
