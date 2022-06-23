@@ -208,6 +208,8 @@ plt.imshow(blur)
 plt.show()
 <br>
 **output**
+![image](https://user-images.githubusercontent.com/98379636/175268334-62299c3d-23f6-44d5-9d9f-66ee4c149371.png)
+
 
 
 
