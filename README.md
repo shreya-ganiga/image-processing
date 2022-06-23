@@ -189,6 +189,10 @@ plt.imshow(result_white)
 plt.show()
 <br>
 **output**
+![image](https://user-images.githubusercontent.com/98379636/175266773-4fe3c966-c827-4b93-81b4-2c154b403481.png)
+<br>
+
+
 
 
 
