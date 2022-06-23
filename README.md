@@ -251,6 +251,10 @@ img.show()
 c.waitKey(0)
 
 **output**
+![image](https://user-images.githubusercontent.com/98379636/175282663-d4283469-a74a-4387-b5ea-6d3f72eb18b9.png)
+
+**change image to different color spaces**
+
 
 
 
