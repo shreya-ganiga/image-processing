@@ -206,6 +206,23 @@ plt.show()
 
 
 
+![image](https://user-images.githubusercontent.com/98379636/175267190-d8e8d0a9-27d6-4dcb-b845-f1ae199344e6.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
