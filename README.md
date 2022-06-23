@@ -235,6 +235,8 @@ cv2.imwrite('output.jpg',fimg4)
 
 **output**
 ![image](https://user-images.githubusercontent.com/98379636/175273850-5c7dad34-955f-4405-9c57-56e09e5a7b6d.png)
+![image](https://user-images.githubusercontent.com/98379636/175274176-f118e509-006f-474f-87cf-cedf27b51698.png)
+
 
 
 
