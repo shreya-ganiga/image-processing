@@ -192,21 +192,18 @@ plt.show()
 ![image](https://user-images.githubusercontent.com/98379636/175266773-4fe3c966-c827-4b93-81b4-2c154b403481.png)
 <br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+final_mask=mask + mask_white
+final_result=cv2.bitwise_and(img,img,mask=final_mask)
+plt.subplot(1,2,1)
+plt.imshow(final_mask,cmap="gray")
+plt.subplot(1,2,2)
+plt.imshow(final_result)
+plt.show()
+<br>
+**output**
 ![image](https://user-images.githubusercontent.com/98379636/175267190-d8e8d0a9-27d6-4dcb-b845-f1ae199344e6.png)
+
+
 
 
 
