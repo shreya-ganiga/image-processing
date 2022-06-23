@@ -210,6 +210,31 @@ plt.show()
 **output**
 ![image](https://user-images.githubusercontent.com/98379636/175268334-62299c3d-23f6-44d5-9d9f-66ee4c149371.png)
 
+**arithmetic operation**
+import cv2
+import matplotlib.image as mapimg
+import matplotlib.pyplot as plt
+img1=cv2.imread('image1.jpg')
+img2=cv2.imread('image2.jpg')
+fimg1=img1+img2
+plt.imshow(fimg1)
+plt.show()
+cv2.imwrite('output.jpg',fimg1)
+fimg2=img1-img2
+plt.imshow(fimg2)
+plt.show()
+cv2.imwrite('output.jpg',fimg2)
+fimg3=img1*img2
+plt.imshow(fimg3)
+plt.show()
+cv2.imwrite('output.jpg',fimg3)
+fimg4=img1/img2
+plt.imshow(fimg4)
+plt.show()
+cv2.imwrite('output.jpg',fimg4)
+
+**output**
+
 
 
 
