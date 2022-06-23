@@ -162,6 +162,19 @@ plt.show()
 **output**
 
 
+import cv2
+hsv_img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+light_orange=(1,190,200)
+dark_orange=(18,255,255)
+mask=cv2.inRange(img,light_orange,dark_orange)
+result=cv2.bitwise_and(img,img,mask=mask)
+plt.subplot(1,2,1)
+plt.imshow(mask,cmap="gray")
+plt.subplot(1,2,2)
+plt.imshow(result)
+plt.show()
+
+
 
 
 
