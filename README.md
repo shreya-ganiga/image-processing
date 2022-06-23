@@ -160,6 +160,8 @@ plt.show()
 <br>
 
 **output**
+![image](https://user-images.githubusercontent.com/98379636/175265766-58df5657-899f-4b4c-8e54-142a45a47459.png)
+<br>
 
 
 import cv2
@@ -173,6 +175,8 @@ plt.imshow(mask,cmap="gray")
 plt.subplot(1,2,2)
 plt.imshow(result)
 plt.show()
+**output**
+
 
 
 
