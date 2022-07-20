@@ -345,6 +345,21 @@ plt.axis('off');
 output
 ![image](https://user-images.githubusercontent.com/98379636/179959721-14091578-d287-43d2-875c-8ea3b790ad17.png)
 
+import imageio
+import matplotlib.pyplot as plt
+# gamma encoding
+pic=imageio.imread('butterfly.jpg')
+gamma=2.2# Gamma < 1 Dark; Gamma > 1 bright
+gamma_correction=((pic/255)**(1/gamma))
+plt.figure(figsize=(5,5))
+plt.imshow(gamma_correction)
+plt.axis('off');
+
+output
+![image](https://user-images.githubusercontent.com/98379636/179961155-54e29d67-649c-4bc8-b315-8d8526e3546a.png)
+
+
+
 
 
 
