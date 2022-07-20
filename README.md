@@ -320,6 +320,35 @@ plt.axis('off');
 output
 ![image](https://user-images.githubusercontent.com/98379636/179958046-959b43c0-ec18-4e40-bee4-df62f9725fc1.png)
 
+negative=255-pic # neg=(L-1) - img
+plt.figure(figsize=(6,6))
+plt.imshow(negative);
+plt.axis("off");
+
+output
+![image](https://user-images.githubusercontent.com/98379636/179959116-fd8d7f47-ba1d-41fe-9af9-b79a30ed04ea.png)
+
+#matplotlib inline
+import imageio
+import numpy as np
+import matplotlib.pyplot as plt
+pic=imageio.imread('butterfly.jpg')
+gray=lambda rgb :np.dot(rgb[...,:3],[0.299,0.587,0.114])
+gray=gray(pic)
+max_=np.max(gray)
+def log_transform():
+    return(255/np.log(1+max_))*np.log(1+gray)
+plt.figure(figsize=(5,5))
+plt.imshow(log_transform(),cmap=plt.get_cmap(name='gray'))
+plt.axis('off');
+
+output
+![image](https://user-images.githubusercontent.com/98379636/179959721-14091578-d287-43d2-875c-8ea3b790ad17.png)
+
+
+
+
+
 
 
 
