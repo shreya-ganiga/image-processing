@@ -412,6 +412,38 @@ plt.show()
 output
 ![image](https://user-images.githubusercontent.com/98379636/179968768-23ad53a8-a709-4167-89e9-bd6e075ba333.png)
 
+image enhancement
+from PIL import Image
+from PIL import ImageEnhance
+image=Image.open('flower.jpg')
+image.show()
+enh_bri=ImageEnhance.Brightness(image)
+brightness=1.5
+image_brightened=enh_bri.enhance(brightness)
+image_brightened.show()
+enh_col=ImageEnhance.Color(image)
+color=1.5
+image_colored=enh_col.enhance(color)
+image_colored.show()
+enh_con=ImageEnhance.Contrast(image)
+contrast=1.5
+image_contrasted=enh_con.enhance(contrast)
+image_contrasted.show()
+enh_sha=ImageEnhance.Sharpness(image)
+sharpness=3.0
+image_sharped=enh_sha.enhance(sharpness)
+image_sharped.show()
+
+output
+![image](https://user-images.githubusercontent.com/98379636/179970283-d70b0d29-9395-408b-b673-3c6116a03d93.png)
+![image](https://user-images.githubusercontent.com/98379636/179970452-51404fc4-df7b-4949-922c-eded7e7b200e.png)
+![image](https://user-images.githubusercontent.com/98379636/179970524-6318c96f-01fc-498d-88da-8aa67f6af139.png)
+![image](https://user-images.githubusercontent.com/98379636/179970596-127fcd1c-0919-4bf0-82f9-d5f14536b1bc.png)
+![image](https://user-images.githubusercontent.com/98379636/179970684-79609823-b881-499c-8285-3e8ca2760968.png)
+
+
+
+
 
 
 
