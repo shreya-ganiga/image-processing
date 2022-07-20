@@ -392,6 +392,27 @@ plt.show()
 output
 ![image](https://user-images.githubusercontent.com/98379636/179966032-ee3d65e3-71c0-4d89-bac5-ef3a0ff551ac.png)
 
+#importing image class from PIL module
+from PIL import Image
+import matplotlib.pyplot as plt
+#opens a image in RGB mode
+im=Image.open('images.jpg')
+
+#size of the image in pixels(size of original image)
+#(this is not mandatory)
+width,height=im.size
+#cropped image of dimension
+#(it will not change orginal image)
+
+im1=im.crop((10,20,55,70))
+#shows the image in image viewer
+im1.show()
+plt.imshow(im1)
+plt.show()
+output
+![image](https://user-images.githubusercontent.com/98379636/179968768-23ad53a8-a709-4167-89e9-bd6e075ba333.png)
+
+
 
 
 
