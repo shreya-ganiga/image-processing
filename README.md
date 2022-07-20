@@ -358,6 +358,41 @@ plt.axis('off');
 output
 ![image](https://user-images.githubusercontent.com/98379636/179961155-54e29d67-649c-4bc8-b315-8d8526e3546a.png)
 
+program for image manipulation
+#image sharpen
+from PIL import Image
+from PIL import ImageFilter
+import matplotlib.pyplot as plt
+#load the image
+my_image=Image.open('images.jpg')
+#use sharpen function
+sharp=my_image.filter(ImageFilter.SHARPEN)
+#save the image
+sharp.save('E:\dog.jpg')
+sharp.show()
+plt.imshow(sharp)
+plt.show()
+
+output
+![image](https://user-images.githubusercontent.com/98379636/179965821-9ddb4329-0469-4250-8148-04227c992d3a.png)
+
+flipping
+#image flip
+import matplotlib.pyplot as plt
+#load the image
+img=Image.open('images.jpg')
+plt.imshow(img)
+plt.show()
+#use the flip function
+flip=img.transpose(Image.FLIP_LEFT_RIGHT)
+#save the image
+flip.save('E:\image_flip.jpg')
+plt.imshow(flip)
+plt.show()
+output
+![image](https://user-images.githubusercontent.com/98379636/179966032-ee3d65e3-71c0-4d89-bac5-ef3a0ff551ac.png)
+
+
 
 
 
