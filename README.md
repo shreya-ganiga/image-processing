@@ -276,6 +276,37 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/98379636/175287467-13195a4d-fb76-47f9-90f2-4636edeb2f49.png)
 ![image](https://user-images.githubusercontent.com/98379636/175287573-027de779-eb23-4a1c-b586-829ef1061d6b.png)
 
+bluring
+import cv2
+import numpy as np
+image=cv2.imread('dog.jpg')
+cv2.imshow('Original Image',image)
+cv2.waitKey(0)
+#Gaussian Blur
+Gaussian=cv2.GaussianBlur(image,(7,7),0)
+cv2.imshow('Gaussian Blurring',Gaussian)
+#Median BLUR
+median=cv2.medianBlur(image,5)
+cv2.imshow('Median Blurring',median)
+cv2.waitKey(0)
+#Bilateral Blur
+bilateral=cv2.bilateralFilter(image,9,75,75)
+cv2.imshow('Bilateral Blurring',bilateral)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+output
+
+![image](https://user-images.githubusercontent.com/98379636/179921789-c03dbca7-9da4-4b58-8cd4-3673e4c46711.png)
+![image](https://user-images.githubusercontent.com/98379636/179921913-2411eef6-086a-4b47-9252-b5586e2513f0.png)
+![image](https://user-images.githubusercontent.com/98379636/179922176-f6385c88-3fb6-47c4-be93-e27c12696ab6.png)
+![image](https://user-images.githubusercontent.com/98379636/179922320-9bac4ebe-a893-473e-9ffe-1eb1ea6e7121.png)
+![image](https://user-images.githubusercontent.com/98379636/179922461-3bdc44c9-268e-4a1a-a6c5-afa0627ba35e.png)
+
+
+
+
+
 
 
 
