@@ -305,6 +305,22 @@ output
 ![image](https://user-images.githubusercontent.com/98379636/179924089-5c835363-cbc1-4730-bea1-d4f5e0c72bec.png)
 
 
+image negative
+#matplotlib inline
+import imageio
+import matplotlib.pyplot as plt
+import warnings
+import matplotlib.cbook
+warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
+pic=imageio.imread('flowers.jpg')
+plt.figure(figsize=(6,6))
+plt.imshow(pic);
+plt.axis('off');
+
+output
+![image](https://user-images.githubusercontent.com/98379636/179958046-959b43c0-ec18-4e40-bee4-df62f9725fc1.png)
+
+
 
 
 
