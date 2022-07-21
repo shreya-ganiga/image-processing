@@ -517,9 +517,20 @@ output<br>
     
   **develop a program to  read the image b)write the grayscale and
     c)display the original image and grayscale image **<br>
-    
-
-
+    import cv2<br>
+OriginalImg=cv2.imread('flowers.jpg')<br>
+GrayImg=cv2.imread('flowers.jpg',0)<br><br>
+isSaved=cv2.imwrite('E:/i.jpg',GrayImg)<br>
+cv2.imshow('Display Original Image',OriginalImg)<br>
+cv2.imshow('Display Grayscale Image',GrayImg)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+if isSaved:<br>
+        print('The Image is successfully saved')<br>
+    output
+    ![image](https://user-images.githubusercontent.com/98379636/180194887-255776f6-df5d-433d-83a0-e9453c8c2975.png)<br>
+    ![image](https://user-images.githubusercontent.com/98379636/180195003-ed31b11c-d6bc-42e0-b7f8-c67105156e2a.png)<br>
+The Image is successfully saved<br>
 
 
 
