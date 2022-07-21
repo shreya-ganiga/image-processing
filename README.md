@@ -1,6 +1,5 @@
 # image-processing
 **develop a program to display the image  using maplot lim**<br>
-
 import  matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
 img=mping.imread("plants.jpg")<br>
@@ -61,7 +60,6 @@ plt.show()<br>
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
 plt.imshow(img)<br>
 plt.show()<br>
-
 img=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)<br>
 plt.imshow(img)<br>
 plt.show()<br>
@@ -89,8 +87,7 @@ size: (275, 183)<br>
 Width: 275<br>
 Height: 183<br>
 <br>
-
-**resize the image**<br>
+**resize the original image**<br>
 import cv2<br>
 img=cv2.imread('leaf.jpg')<br>
 print('original image length width',img.shape)<br>
@@ -100,14 +97,12 @@ cv2.imshow('Resized image',imgresize)<br>
 print('Resized  image lenght width',imgresize.shape)<br>
 cv2.waitKey(0)<br>
 <br>
-
 **output**<br>
 ![image](https://user-images.githubusercontent.com/98379636/174053815-c2f64396-e82c-4451-8af2-0d18280a445b.png)<br>
 ![image](https://user-images.githubusercontent.com/98379636/174054040-e3d2d88d-53c5-4660-9e7d-e8824e71d7c5.png)<br>
 original image length width (183, 275, 3)<br>
 Resized  image lenght width (160, 150, 3)<br>
 <br>
-
 ** convert the original image to grayscale and then binary**<br>
 import cv2<br>
 img=cv2.imread('butterfly.jpg')<br>
@@ -121,7 +116,6 @@ cv2.imshow("Binary",bw_img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 <br>
-
 **output**
 ![image](https://user-images.githubusercontent.com/98379636/174061189-81144c5d-05a4-4b38-8ca5-eec901b62d84.png)<br>
 ![image](https://user-images.githubusercontent.com/98379636/174061294-31734fa9-3444-4c1b-bc89-80efed51ac15.png)<br>
@@ -138,8 +132,7 @@ plt.show()<br>
 **output**<br>
 ![image](https://user-images.githubusercontent.com/98379636/175009258-2e38cf41-f147-4dbb-8f17-9258018f33d7.png)<br>
 <br>
-
-**masking and bluring**
+* write a program to masking and bluring**
 import cv2<br>
 import matplotlib.image as mpimg<br>
 import matplotlib.pyplot as plt<br>
@@ -198,7 +191,7 @@ plt.show()<br>
 **output**<br>
 ![image](https://user-images.githubusercontent.com/98379636/175268334-62299c3d-23f6-44d5-9d9f-66ee4c149371.png)<br>
 
-**arithmetic operation**<br>
+** write a progam to perform arithmetic operation on edges**<br>
 import cv2<br>
 import matplotlib.image as mapimg<br>
 import matplotlib.pyplot as plt<br>
@@ -225,7 +218,7 @@ cv2.imwrite('output.jpg',fimg4)<br>
 ![image](https://user-images.githubusercontent.com/98379636/175274176-f118e509-006f-474f-87cf-cedf27b51698.png)<br>
 ![image](https://user-images.githubusercontent.com/98379636/175274280-285c650c-51f5-4fd8-84f1-d994a3f78761.png)<br>
 
-**2D array**<br>
+** program to create an image using 2D array**<br>
 import cv2 as c<br>
 import numpy as np<br>
 from PIL import Image<br>
@@ -239,7 +232,7 @@ c.waitKey(0)<br>
 **output**<br>
 ![image](https://user-images.githubusercontent.com/98379636/175282663-d4283469-a74a-4387-b5ea-6d3f72eb18b9.png)<br>
 <br>
-**change image to different color spaces**<br>
+**create image to different color spaces**<br>
 import cv2<br>
 img=cv2.imread("plants.jpg")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY<br>
@@ -260,8 +253,8 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/98379636/175287355-53233039-b1da-4198-b7bc-acbd4c0c8ead.png)<br>
 ![image](https://user-images.githubusercontent.com/98379636/175287467-13195a4d-fb76-47f9-90f2-4636edeb2f49.png)<br>
 ![image](https://user-images.githubusercontent.com/98379636/175287573-027de779-eb23-4a1c-b586-829ef1061d6b.png)<br>
-
-bluring<br>
+<br>
+**bluring**<br>
 import cv2<br>
 import numpy as np<br>
 image=cv2.imread('dog.<jpg')<br>
@@ -285,7 +278,9 @@ output<br>
 ![image](https://user-images.githubusercontent.com/98379636/180190810-2587e100-3789-45f9-9031-dae26f8458c0.png)<br>
 ![image](https://user-images.githubusercontent.com/98379636/180191026-27d96270-0d59-4b02-9875-68ea23ebf505.png)<br>
 <br>
-image negative<br>
+
+**program to perform basic data analysis using intensity transformation
+a)image negative
 #matplotlib inline<br>
 import imageio<br>
 import matplotlib.pyplot as plt<r>
@@ -337,7 +332,8 @@ plt.axis('off');<br>
 output<br>
 ![image](https://user-images.githubusercontent.com/98379636/179961155-54e29d67-649c-4bc8-b315-8d8526e3546a.png)<br>
 
-program for image manipulation<br>
+**program to perform basic image manipulation** <br>
+a)sharpen<br>
 #image sharpen<br>
 from PIL import Image<br>
 from PIL import ImageFilter<br>
@@ -354,6 +350,7 @@ plt.show()<br>
 <br>
 output<br>
 ![image](https://user-images.githubusercontent.com/98379636/179965821-9ddb4329-0469-4250-8148-04227c992d3a.png)<br>
+
 flipping<br>
 #image flip<br>
 import matplotlib.pyplot as plt<br>
@@ -370,6 +367,7 @@ plt.show()<br>
 output<br>
 ![image](https://user-images.githubusercontent.com/98379636/179966032-ee3d65e3-71c0-4d89-bac5-ef3a0ff551ac.png)<br>
 <br>
+**cropping**
 #importing image class from PIL module<br>
 from PIL import Image<br>
 import matplotlib.pyplot as plt<br>
