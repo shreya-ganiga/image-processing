@@ -514,6 +514,10 @@ plt.show()<br>
 <br>
 output<br>
 ![image](https://user-images.githubusercontent.com/98379636/180176637-ec79a8dc-8ab2-4bd9-9054-d8f08370a5eb.png)<br>
+    
+  **develop a program to  read the image b)write the grayscale and
+    c)display the original image and grayscale image **<br>
+    
 
 
 
