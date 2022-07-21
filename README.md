@@ -428,7 +428,7 @@ bitwiseOr=cv2.bitwise_or(image1,image2)<br>
 bitwiseXor=cv2.bitwise_xor(image1,image2)<br>
 bitwiseNot_img1=cv2.bitwise_not(image1)<br>
 bitwiseNot_img2=cv2.bitwise_not(image2)<br>
-plt.subplot(151)<br><br>
+plt.subplot(151)<br>
 plt.imshow(bitwiseAnd)<br>
 plt.subplot(152)<br>
 plt.imshow(bitwiseOr)<br>
