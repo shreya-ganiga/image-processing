@@ -280,12 +280,10 @@ cv2.imshow('Bilateral Blurring',bilateral)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 output<br>
-![image](https://user-images.githubusercontent.com/98379636/179921789-c03dbca7-9da4-4b58-8cd4-3673e4c46711.png)<br>
-![image](https://user-images.githubusercontent.com/98379636/179921913-2411eef6-086a-4b47-9252-b5586e2513f0.png)<br>
-![image](https://user-images.githubusercontent.com/98379636/179922176-f6385c88-3fb6-47c4-be93-e27c12696ab6.png)<br>
-![image](https://user-images.githubusercontent.com/98379636/179922320-9bac4ebe-a893-473e-9ffe-1eb1ea6e7121.png)<br>
-![image](https://user-images.githubusercontent.com/98379636/179922461-3bdc44c9-268e-4a1a-a6c5-afa0627ba35e.png)<br>
-![image](https://user-images.githubusercontent.com/98379636/179924089-5c835363-cbc1-4730-bea1-d4f5e0c72bec.png)<br>
+![image](https://user-images.githubusercontent.com/98379636/180190404-80494c1d-d856-4aca-92aa-23e9659fd44c.png)<br>
+![image](https://user-images.githubusercontent.com/98379636/180190674-7cc01e40-cadf-46b2-8768-03fd24852beb.png)<br>
+![image](https://user-images.githubusercontent.com/98379636/180190810-2587e100-3789-45f9-9031-dae26f8458c0.png)<br>
+![image](https://user-images.githubusercontent.com/98379636/180191026-27d96270-0d59-4b02-9875-68ea23ebf505.png)<br>
 <br>
 image negative<br>
 #matplotlib inline<br>
