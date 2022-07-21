@@ -441,6 +441,32 @@ output
 ![image](https://user-images.githubusercontent.com/98379636/179970596-127fcd1c-0919-4bf0-82f9-d5f14536b1bc.png)
 ![image](https://user-images.githubusercontent.com/98379636/179970684-79609823-b881-499c-8285-3e8ca2760968.png)
 
+bitwise operation
+import cv2
+import matplotlib.pyplot as plt
+image1=cv2.imread('baby.jpg',1)
+image2=cv2.imread('baby.jpg')
+ax=plt.subplots(figsize=(15,10))
+bitwiseAnd=cv2.bitwise_and(image1,image2)
+bitwiseOr=cv2.bitwise_or(image1,image2)
+bitwiseXor=cv2.bitwise_xor(image1,image2)
+bitwiseNot_img1=cv2.bitwise_not(image1)
+bitwiseNot_img2=cv2.bitwise_not(image2)
+plt.subplot(151)
+plt.imshow(bitwiseAnd)
+plt.subplot(152)
+plt.imshow(bitwiseOr)
+plt.subplot(153)
+plt.imshow(bitwiseXor)
+plt.subplot(154)
+plt.imshow(bitwiseNot_img1)
+plt.subplot(155)
+plt.imshow(bitwiseNot_img2)
+cv2.waitKey(0)
+output
+![image](https://user-images.githubusercontent.com/98379636/180172665-dacdf86c-c3e9-4b17-ad11-ee2df80f5b21.png)
+
+
 
 
 
