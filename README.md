@@ -643,7 +643,77 @@ print(numpydata)
 from PIL import Image
 import matplotlib.pyplot as plt
 input_image = Image.new(mode="RGB", size=(1000, 1000),color="pink")
-pixel_map 
+pixel_map = input_image.load()
+width, height = input_image.size
+z = 100
+for i in range(width):
+    for j in range(height):
+        if((i >= z and i <= width-z) and (j >= z and j <= height-z)):
+            pixel_map[i, j] = (230,230,250)
+        else:
+            pixel_map[i, j] = (216,191,216)
+    for i in range(width):
+        pixel_map[i, i] = (0, 0, 255)
+        pixel_map[i, width-i-1] = (0, 0, 255)
+plt.imshow(input_image)
+plt.show()
+**output**
+![image](https://user-images.githubusercontent.com/98379636/181234892-66bcc9ed-4e85-47a3-95a2-9e7414807d5d.png)
+                                                                    
+import numpy as np
+import matplotlib.pyplot as plt
+arr = np.zeros((256,256,3), dtype=np.uint8)
+imgsize = arr.shape[:2]
+innerColor = (255, 255, 255)
+outerColor = (0, 0, 0)
+for y in range(imgsize[1]):
+    for x in range(imgsize[0]):
+        distanceToCenter = np.sqrt((x - imgsize[0]//2) ** 2 + (y - imgsize[1]//2) ** 2)
+        distanceToCenter = distanceToCenter / (np.sqrt(2) * imgsize[0]/2)
+        r = outerColor[0] * distanceToCenter + innerColor[0] * (1 - distanceToCenter)
+        g = outerColor[1] * distanceToCenter + innerColor[1] * (1 - distanceToCenter)
+        b = outerColor[2] * distanceToCenter + innerColor[2] * (1 - distanceToCenter)
+        arr[y, x] = (int(r), int(g), int(b))
+plt.imshow(arr, cmap='gray')
+plt.show() 
+ **output**
+![image](https://user-images.githubusercontent.com/98379636/181235153-34acc89c-7773-4bbc-8a77-3bb40b3433a1.png)
+import numpy as np
+import matplotlib.pyplot as plt
+
+imgsize=(650,650)
+image = Image.new('RGB', imgsize)
+innerColor = [153,0,0]
+for y in range(imgsize[1]):
+    for x in range(imgsize[0]):
+        distanceToCenter =np.sqrt((x - imgsize[0]/2) ** 2 + (y - imgsize[1]/2) ** 2)
+        distanceToCenter = (distanceToCenter) / (np.sqrt(2) * imgsize[0]/2)
+        r = distanceToCenter + innerColor[0] * (1 - distanceToCenter)
+        g = distanceToCenter + innerColor[1] * (1 - distanceToCenter)
+        b = distanceToCenter + innerColor[2] * (1 - distanceToCenter)
+        image.putpixel((x, y), (int(r), int(g), int(b)))
+plt.imshow(image)
+plt.show()
+**output**                                                                                                                                      
+ ![image](https://user-images.githubusercontent.com/98379636/181235312-6176beaa-7130-4484-9ac7-a7fb8d542970.png)
+   from PIL import Image
+import numpy as np
+import matplotlib.pyplot as plt
+w, h = 512, 512
+data = np.zeros((h, w, 3), dtype=np.uint8)
+data[0:100, 0:100] = [255, 0, 0]
+data[100:200, 100:200] = [255, 0, 255]
+data[200:300, 200:300] = [0, 255, 0]
+data[300:400, 300:400] = [255, 255, 0]
+data[400:500, 400:500] = [0, 255, 255]
+img = Image.fromarray(data, 'RGB')
+img.save('f1.jpg')
+plt.imshow(img)
+plt.show()
+ **output**                                                                 
+ ![image](https://user-images.githubusercontent.com/98379636/181235486-1919ed1a-5e28-4996-8f08-ee16050f886c.png)
+                                                                   
+                                                                    
 
 
 
