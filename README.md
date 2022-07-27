@@ -529,6 +529,56 @@ if isSaved:<br>
     ![image](https://user-images.githubusercontent.com/98379636/180194887-255776f6-df5d-433d-83a0-e9453c8c2975.png)<br>
     ![image](https://user-images.githubusercontent.com/98379636/180195003-ed31b11c-d6bc-42e0-b7f8-c67105156e2a.png)<br>
 The Image is successfully saved<br>
+**assignment**
+from PIL import Image, ImageStat<br>
+im = Image.open('rose.jpg')<br>
+stat = ImageStat.Stat(im)<br>
+print(stat.stddev)<br>
+output<br>
+[82.54738956211672, 75.14044878977742, 67.40861160301475]<br>
+import cv2<br>
+import numpy as np<br>
+img=cv2.imread('horse1.jpg')<br>
+cv2.imshow('horse1.jpg',img)<br>
+cv2.waitKey(0)<br>
+#max_channels=np.amax([np.amax(img[:,:,0]),np.amax(img[:,:,1]),np.amax(img[:,:,2])])<br>
+#print(max_channels)<br>
+np.max(img)<br>
+output<br>
+255<br>
+![image](https://user-images.githubusercontent.com/98379636/181211670-fb5dc9fa-1498-42ee-bc0a-5a9f7311658b.png)<br>
+import cv2<br>
+import numpy as np<br>
+img=cv2.imread('rose.jpg')<br>
+cv2.imshow('rose.jpg',img)<br>
+cv2.waitKey(0)<br>
+#min_channels=np.amin([np.amin(img[:,:,0]),np.amin(img[:,:,1]),np.amin(img[:,:,2])])<br>
+#print(min_channels)<br>
+np.min(img)<br>
+0<br>
+output<br>
+![image](https://user-images.githubusercontent.com/98379636/181211976-688a4978-d143-48d0-aace-3f0a498507b9.png)<br>
+import cv2<br>
+import numpy as np<br>
+img=cv2.imread('butterfly.jpg')<br>
+cv2.imshow('butterfly.jpg',img)<br>
+cv2.waitKey(0)<br>
+np.average(img)<br>
+output<br>
+![image](https://user-images.githubusercontent.com/98379636/181212682-39d86ebc-8def-44d7-be70-3be65e40c84b.png)<br>
+89.28693453273364<br>
+import cv2<br>
+import numpy as np<br>
+img=cv2.imread('cat.jpg')<br>
+cv2.imshow('cat.jpg',img)<br>
+cv2.waitKey(0)<br>
+np.std(img)<br>
+output<br>
+![image](https://user-images.githubusercontent.com/98379636/181213373-92f3aa3f-4b41-4108-b5a1-b0f0d6cb6365.png)<br>
+36.555271183871334<br>
+
+
+
 
 
 
