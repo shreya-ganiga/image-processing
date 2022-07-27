@@ -529,7 +529,8 @@ if isSaved:<br>
     ![image](https://user-images.githubusercontent.com/98379636/180194887-255776f6-df5d-433d-83a0-e9453c8c2975.png)<br>
     ![image](https://user-images.githubusercontent.com/98379636/180195003-ed31b11c-d6bc-42e0-b7f8-c67105156e2a.png)<br>
 The Image is successfully saved<br>
-**assignment**
+    
+**assignment**<br>
 from PIL import Image, ImageStat<br>
 im = Image.open('rose.jpg')<br>
 stat = ImageStat.Stat(im)<br>
