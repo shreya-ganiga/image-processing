@@ -582,13 +582,12 @@ output<br>
 ![image](https://user-images.githubusercontent.com/98379636/181213373-92f3aa3f-4b41-4108-b5a1-b0f0d6cb6365.png)<br>
 36.555271183871334<br>
 
-from PIL import Image
-from numpy import asarray
-img = Image.open('f1.jpg')
-numpydata = asarray(img)
-print(numpydata)
-**output**
-
+from PIL import Image<br>
+from numpy import asarray<br>
+img = Image.open('f1.jpg')<br>
+numpydata = asarray(img)<br>
+print(numpydata)<br>
+**output**<br>
 [[[254   0   0]
   [254   0   0]
   [254   0   0]
