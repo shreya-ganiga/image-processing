@@ -582,6 +582,70 @@ output<br>
 ![image](https://user-images.githubusercontent.com/98379636/181213373-92f3aa3f-4b41-4108-b5a1-b0f0d6cb6365.png)<br>
 36.555271183871334<br>
 
+from PIL import Image
+from numpy import asarray
+img = Image.open('f1.jpg')
+numpydata = asarray(img)
+print(numpydata)
+**output**
+
+[[[254   0   0]
+  [254   0   0]
+  [254   0   0]
+  ...
+  [  0   0   0]
+  [  0   0   0]
+  [  0   0   0]]
+
+ [[254   0   0]
+  [254   0   0]
+  [254   0   0]
+  ...
+  [  0   0   0]
+  [  0   0   0]
+  [  0   0   0]]
+
+ [[254   0   0]
+  [254   0   0]
+  [254   0   0]
+  ...
+  [  0   0   0]
+  [  0   0   0]
+  [  0   0   0]]
+
+ ...
+
+ [[  0   0   0]
+  [  0   0   0]
+  [  0   0   0]
+  ...
+  [ 34   0   2]
+  [ 25   0   2]
+  [ 13   0   4]]
+
+ [[  0   0   0]
+  [  0   0   0]
+  [  0   0   0]
+  ...
+  [ 25   0   2]
+  [ 20   0   4]
+  [  6   0   5]]
+
+ [[  0   0   0]
+  [  0   0   0]
+  [  0   0   0]
+  ...
+  [ 13   0   4]
+  [  7   0   5]
+  [  0   3   5]]]
+  
+
+from PIL import Image
+import matplotlib.pyplot as plt
+input_image = Image.new(mode="RGB", size=(1000, 1000),color="pink")
+pixel_map 
+
+
 
 
 
