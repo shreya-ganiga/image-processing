@@ -530,13 +530,14 @@ if isSaved:<br>
     ![image](https://user-images.githubusercontent.com/98379636/180195003-ed31b11c-d6bc-42e0-b7f8-c67105156e2a.png)<br>
 The Image is successfully saved<br>
     
-**assignment**<br>
+**standard deviation**<br>
 from PIL import Image, ImageStat<br>
 im = Image.open('rose.jpg')<br>
 stat = ImageStat.Stat(im)<br>
 print(stat.stddev)<br>
 output<br>
 [82.54738956211672, 75.14044878977742, 67.40861160301475]<br>
+**maximum**<br>
 import cv2<br>
 import numpy as np<br>
 img=cv2.imread('horse1.jpg')<br>
@@ -548,6 +549,7 @@ np.max(img)<br>
 output<br>
 255<br>
 ![image](https://user-images.githubusercontent.com/98379636/181211670-fb5dc9fa-1498-42ee-bc0a-5a9f7311658b.png)<br>
+**minimum**<br>
 import cv2<br>
 import numpy as np<br>
 img=cv2.imread('rose.jpg')<br>
@@ -559,6 +561,7 @@ np.min(img)<br>
 0<br>
 output<br>
 ![image](https://user-images.githubusercontent.com/98379636/181211976-688a4978-d143-48d0-aace-3f0a498507b9.png)<br>
+**average**<br>
 import cv2<br>
 import numpy as np<br>
 img=cv2.imread('butterfly.jpg')<br>
@@ -568,6 +571,7 @@ np.average(img)<br>
 output<br>
 ![image](https://user-images.githubusercontent.com/98379636/181212682-39d86ebc-8def-44d7-be70-3be65e40c84b.png)<br>
 89.28693453273364<br>
+**standard deviation**<br>
 import cv2<br>
 import numpy as np<br>
 img=cv2.imread('cat.jpg')<br>
