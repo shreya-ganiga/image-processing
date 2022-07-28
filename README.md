@@ -103,7 +103,7 @@ cv2.waitKey(0)<br>
 original image length width (183, 275, 3)<br>
 Resized  image lenght width (160, 150, 3)<br>
 <br>
-** convert the original image to grayscale and then binary**<br>
+**convert the original image to grayscale and then binary**<br>
 import cv2<br>
 img=cv2.imread('butterfly.jpg')<br>
 cv2.imshow("RGB",img)<br>
@@ -132,7 +132,7 @@ plt.show()<br>
 **output**<br>
 ![image](https://user-images.githubusercontent.com/98379636/175009258-2e38cf41-f147-4dbb-8f17-9258018f33d7.png)<br>
 <br>
-* write a program to masking and bluring**
+ **write a program to masking and bluring**
 import cv2<br>
 import matplotlib.image as mpimg<br>
 import matplotlib.pyplot as plt<br>
@@ -191,7 +191,7 @@ plt.show()<br>
 **output**<br>
 ![image](https://user-images.githubusercontent.com/98379636/175268334-62299c3d-23f6-44d5-9d9f-66ee4c149371.png)<br>
 
-** write a progam to perform arithmetic operation on edges**<br>
+**** write a progam to perform arithmetic operation on edges****<br>
 import cv2<br>
 import matplotlib.image as mapimg<br>
 import matplotlib.pyplot as plt<br>
@@ -218,7 +218,7 @@ cv2.imwrite('output.jpg',fimg4)<br>
 ![image](https://user-images.githubusercontent.com/98379636/175274176-f118e509-006f-474f-87cf-cedf27b51698.png)<br>
 ![image](https://user-images.githubusercontent.com/98379636/175274280-285c650c-51f5-4fd8-84f1-d994a3f78761.png)<br>
 
-** program to create an image using 2D array**<br>
+**** program to create an image using 2D array****<br>
 import cv2 as c<br>
 import numpy as np<br>
 from PIL import Image<br>
@@ -260,7 +260,7 @@ import numpy as np<br>
 image=cv2.imread('dog.<jpg')<br>
 cv2.imshow('Original Image',image)<br>
 cv2.waitKey(0)<br>
-#Gaussian Blur<br>
+**Gaussian blur**<br>
 Gaussian=cv2.GaussianBlur(image,(7,7),0)<br>
 cv2.imshow('Gaussian Blurring',Gaussian)<br>
 #Median BLUR<br>
