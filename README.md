@@ -799,36 +799,35 @@ array_colors = np.array([[[245, 20, 36], <br>
                          [10, 215, 30],<br>
                          [40, 50, 205]],<br>
                          [[70, 50, 10], <br>
-                    [25, 230, 85],
-                    [12, 128, 128]],
-                    [[25, 212, 3], 
-                    [55, 5, 250],
-                    [240, 152, 25]],
+                    [25, 230, 85],<br>
+                    [12, 128, 128]],<br>
+                    [[25, 212, 3], <br>
+                    [55, 5, 250],<br>
+                    [240, 152, 25]],<br>
                     ])
-plt.imshow(array_colors)
-np.max(array_colors)
-    **output**
-    ![image](https://user-images.githubusercontent.com/98379636/181441719-60811892-aa3d-442a-bdac-f064a2e91c53.png)
-250
-    **To find minimum in a given matrix**
-    import numpy as np
-import matplotlib.pyplot as plt
-
-array_colors = np.array([[[245, 20, 36], 
-                         [10, 215, 30],
-                         [40, 50, 205]],
-                         [[70, 50, 10], 
-                    [25, 230, 85],
-                    [12, 128, 128]],
-                    [[25, 212, 3], 
-                    [55, 5, 250],
-                    [240, 152, 25]],
-                    ])
-plt.imshow(array_colors)
-np.min(array_colors)
-    **output**
-    ![image](https://user-images.githubusercontent.com/98379636/181442254-649321f3-0e74-49b9-b840-1ece7fd5fcc4.png)
-250
+plt.imshow(array_colors)<br>
+np.max(array_colors)<br>
+    **output**<br>
+    ![image](https://user-images.githubusercontent.com/98379636/181441719-60811892-aa3d-442a-bdac-f064a2e91c53.png)<br>
+250<br>
+    **To find minimum in a given matrix**<br>
+    import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+array_colors = np.array([[[245, 20, 36], <br>
+                         [10, 215, 30],<br>
+                         [40, 50, 205]],<br>
+                         [[70, 50, 10], <br>
+                    [25, 230, 85],<br>
+                    [12, 128, 128]],<br>
+                    [[25, 212, 3], <br>
+                    [55, 5, 250],<br>
+                    [240, 152, 25]],<br>
+                    ])<br>
+plt.imshow(array_colors)<br>
+np.min(array_colors)<br>
+    **output**<br>
+    ![image](https://user-images.githubusercontent.com/98379636/181442254-649321f3-0e74-49b9-b840-1ece7fd5fcc4.png)<br>
+250<br>
     
 
     
