@@ -737,15 +737,41 @@ def printPattern(n):<br>
 n = 4;<br> 
 printPattern(n);<br>
 **output**<br>
-3 3 3 3 3 3 3 
-3 2 2 2 2 2 3 
-3 2 1 1 1 2 3 
-3 2 1 0 1 2 3 
-3 2 1 1 1 2 3 
-3 2 2 2 2 2 3 
-3 3 3 3 3 3 3 
-                                                                   
-                                                                    
+3 3 3 3 3 3 3 <br>
+3 2 2 2 2 2 3 <br>
+3 2 1 1 1 2 3 <br>
+3 2 1 0 1 2 3 <br>
+3 2 1 1 1 2 3 <br>
+3 2 2 2 2 2 3 <br>
+3 3 3 3 3 3 3 <br>
+
+# First import the required Python Libraries
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+from skimage import img_as_uint<br>
+from skimage.io import imshow, imread<br>
+from skimage.color import rgb2hsv<br>
+from skimage.color import rgb2gray<br>
+array_1 = np.array([[255, 0,17], <br>
+                    [100,0, 255],<br>
+                    [255,0,35]])<br>
+imshow(array_1);<br>
+**output**<br>
+![image](https://user-images.githubusercontent.com/98379636/181438144-d99fb24a-284c-4065-81f0-99de742ad106.png)
+
+# First import the required Python Libraries<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+from skimage import img_as_uint<br>
+from skimage.io import imshow, imread<br>
+from skimage.color import rgb2hsv<br>
+from skimage.color import rgb2gray<br>
+array_1 = np.array([[255, 0,17], <br>
+                    [100,0, 255],<br>
+                    [255,0,35]])<br>
+imshow(array_1,cmap='gray');<br>
+**output**<br><br>
+![image](https://user-images.githubusercontent.com/98379636/181439042-4a820422-1076-406e-a677-b2cd130f081c.png)<br>
 
 
 
