@@ -840,6 +840,7 @@ mask = image < 87<br>
 image[mask]=255<br>
 plt.imshow(image, cmap='gray')<br>
     **output**<br>
+    
     ![image](https://user-images.githubusercontent.com/98379636/186403493-e0e6b462-5130-4d3c-a58c-dc842e47efe9.png)<br>
     **scipy**
     import cv2
@@ -867,8 +868,85 @@ im.show()
 from PIL import ImageEnhance<br>
 enh = ImageEnhance.Contrast(im)<br>
 enh.enhance(1.8).show("30% more contrast")<br>
-    **output**
+    **output**<br>
+    
     ![image](https://user-images.githubusercontent.com/98379636/186404465-2acca076-5d7b-40bd-9960-2a2a702b02b7.png)<br>
+    ![image](https://user-images.githubusercontent.com/98379636/186404951-4ed1b2aa-4e82-4699-9405-c86a423f2b43.png)
+    
+    ** sobel**  
+import cv2
+
+ 
+
+# Read the original image
+
+img = cv2.imread('rose.jpg')
+
+# Display original image
+
+cv2.imshow('Original', img)
+
+cv2.waitKey(0)
+
+ 
+
+# Convert to graycsale
+
+img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+# Blur the image for better edge detection
+
+img_blur = cv2.GaussianBlur(img_gray, (3,3), 0)
+
+ 
+
+# Sobel Edge Detection
+
+sobelx = cv2.Sobel(src=img_blur, ddepth=cv2.CV_64F, dx=1, dy=0, ksize=5) # Sobel Edge Detection on the X axis
+
+sobely = cv2.Sobel(src=img_blur, ddepth=cv2.CV_64F, dx=0, dy=1, ksize=5) # Sobel Edge Detection on the Y axis
+
+sobelxy = cv2.Sobel(src=img_blur, ddepth=cv2.CV_64F, dx=1, dy=1, ksize=5) # Combined X and Y Sobel Edge Detection
+
+# Display Sobel Edge Detection Images
+
+cv2.imshow('Sobel X', sobelx)
+
+cv2.waitKey(0)
+
+cv2.imshow('Sobel Y', sobely)
+
+cv2.waitKey(0)
+
+cv2.imshow('Sobel X Y using Sobel() function', sobelxy)
+
+cv2.waitKey(0)
+
+ 
+
+# Canny Edge Detection
+
+edges = cv2.Canny(image=img_blur, threshold1=100, threshold2=200) # Canny Edge Detection
+
+# Display Canny Edge Detection Image
+
+cv2.imshow('Canny Edge Detection', edges)
+
+cv2.waitKey(0)
+
+ 
+
+cv2.destroyAllWindows()
+    
+    **output**
+    ![image](https://user-images.githubusercontent.com/98379636/186405406-27d764e0-a187-42cf-abda-d90a1a1a6fe1.png)<br>
+    ![image](https://user-images.githubusercontent.com/98379636/186405502-992d5feb-99c6-4631-8bc9-75856d3a0f79.png))<br>
+
+    ![image](https://user-images.githubusercontent.com/98379636/186405585-9c6ff31d-80d0-4e9e-8080-667b055ef674.png))<br>
+![image](https://user-images.githubusercontent.com/98379636/186405632-1a286119-6c05-4225-94cb-aeaebc1bce99.png))<br>
+![image](https://user-images.githubusercontent.com/98379636/186405776-646bfc12-6552-4471-8abc-e261615101a9.png))<br>
+
+
     
 
 
