@@ -828,7 +828,7 @@ np.min(array_colors)<br>
     **output**<br>
     ![image](https://user-images.githubusercontent.com/98379636/181442254-649321f3-0e74-49b9-b840-1ece7fd5fcc4.png)<br>
 250<br>
-**example programs**
+**example programs**<br>
 import numpy as np<br>
 from skimage import data<br>
 import matplotlib.pyplot as plt<br>
@@ -839,8 +839,39 @@ np.ndarray #Image is a numpy array<br>
 mask = image < 87<br>
 image[mask]=255<br>
 plt.imshow(image, cmap='gray')<br>
+    **output**<br>
+    ![image](https://user-images.githubusercontent.com/98379636/186403493-e0e6b462-5130-4d3c-a58c-dc842e47efe9.png)<br>
+    **scipy**
+    import cv2
+from scipy import misc,ndimage
+ 
+
+face = misc.face()<br>
+img=cv2.imread('peacock.jpg')<br>
+blurred_face = ndimage.gaussian_filter(face, sigma=3)<br>
+very_blurred = ndimage.gaussian_filter(face, sigma=5)<br>
+
+
+#Results<br>
+plt.imshow(img)<br>
     **output**
-    ![image](https://user-images.githubusercontent.com/98379636/186403493-e0e6b462-5130-4d3c-a58c-dc842e47efe9.png)
+    ![image](https://user-images.githubusercontent.com/98379636/186404062-bc7ae4f3-f36f-4902-b340-e742e1cc193c.png)<br>
+**image enhance**<br>
+    from PIL import Image, ImageFilter<br>
+#Read image<br>
+im = Image.open( 'horse1.jpg' )<br>
+#Display image<br>
+im.show()
+ 
+
+from PIL import ImageEnhance<br>
+enh = ImageEnhance.Contrast(im)<br>
+enh.enhance(1.8).show("30% more contrast")<br>
+    **output**
+    ![image](https://user-images.githubusercontent.com/98379636/186404465-2acca076-5d7b-40bd-9960-2a2a702b02b7.png)<br>
+    
+
+
 
     
 
