@@ -828,7 +828,19 @@ np.min(array_colors)<br>
     **output**<br>
     ![image](https://user-images.githubusercontent.com/98379636/181442254-649321f3-0e74-49b9-b840-1ece7fd5fcc4.png)<br>
 250<br>
-    
+**example programs**
+import numpy as np<br>
+from skimage import data<br>
+import matplotlib.pyplot as plt<br>
+%matplotlib inline<br>
+image = data.camera()<br>
+type(image)<br>
+np.ndarray #Image is a numpy array<br>
+mask = image < 87<br>
+image[mask]=255<br>
+plt.imshow(image, cmap='gray')<br>
+    **output**
+    ![image](https://user-images.githubusercontent.com/98379636/186403493-e0e6b462-5130-4d3c-a58c-dc842e47efe9.png)
 
     
 
